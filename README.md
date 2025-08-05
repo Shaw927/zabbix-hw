@@ -23,6 +23,10 @@
 ---
 
 ### Задание 1
+Установите Zabbix Server с веб-интерфейсом.
+
+<img width="853" height="498" alt="изображение" src="https://github.com/user-attachments/assets/9d718e72-5e32-43e1-b77f-6282295eda6a" />
+<img width="1245" height="711" alt="изображение" src="https://github.com/user-attachments/assets/11b43b9d-6d52-409d-b113-3249d2670e66" />
 
 `Приведите ответ в свободной форме........`
 
