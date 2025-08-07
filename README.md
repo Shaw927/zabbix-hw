@@ -25,54 +25,29 @@
 ### Задание 1
 Установите Zabbix Server с веб-интерфейсом.
 
-<img width="853" height="498" alt="изображение" src="https://github.com/user-attachments/assets/9d718e72-5e32-43e1-b77f-6282295eda6a" />
-<img width="1245" height="711" alt="изображение" src="https://github.com/user-attachments/assets/11b43b9d-6d52-409d-b113-3249d2670e66" />
+`При необходимости прикрепитe сюда скриншоты`
+<img width="1054" height="616" alt="изображение" src="https://github.com/user-attachments/assets/e60da7d6-44ea-4d80-9a65-25758222cb5b" />
+<img width="1067" height="1020" alt="изображение" src="https://github.com/user-attachments/assets/13bacf36-c1f1-49a8-8c76-ce789eabeba5" />
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
-
-
----
 
 ### Задание 2
 
+Установите Zabbix Agent на два хоста.
+
 `Приведите ответ в свободной форме........`
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.0+debian12_all.deb
+dpkg -i zabbix-release_latest_7.0+debian12_all.deb
+apt update
+apt install zabbix-agent
+# systemctl restart zabbix-agent
+# systemctl enable zabbix-agent
 
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
+`При необходимости прикрепитe сюда скриншоты`
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
-
+<img width="2349" height="557" alt="изображение" src="https://github.com/user-attachments/assets/b24ac129-1ae4-4656-a7a2-d55795a6535a" />
+<img width="2126" height="1167" alt="изображение" src="https://github.com/user-attachments/assets/b528cc03-133c-4e55-901c-80849923ecef" />
+<img width="807" height="252" alt="изображение" src="https://github.com/user-attachments/assets/f823f2eb-9eec-47cb-9294-0d1becb0bfa8" />
 
 ---
 
