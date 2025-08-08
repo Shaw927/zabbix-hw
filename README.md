@@ -25,6 +25,22 @@
 ### Задание 1
 Установите Zabbix Server с веб-интерфейсом.
 
+`Приведите ответ в свободной форме........`
+
+sudo apt update
+sudo apt install -y postgresql postgresql-contrib
+wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.0+debian12_all.deb
+dpkg -i zabbix-release_latest_7.0+debian12_all.deb
+apt update
+apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent 
+sudo -u postgres createuser --pwprompt zabbix
+sudo -u postgres createdb -O zabbix zabbix
+zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+vim /etc/zabbix/zabbix_server.conf
+DBPassword=zabbix
+systemctl restart zabbix-server zabbix-agent apache2
+systemctl enable zabbix-server zabbix-agent apache2 
+
 `При необходимости прикрепитe сюда скриншоты`
 <img width="1054" height="616" alt="изображение" src="https://github.com/user-attachments/assets/e60da7d6-44ea-4d80-9a65-25758222cb5b" />
 <img width="1067" height="1020" alt="изображение" src="https://github.com/user-attachments/assets/13bacf36-c1f1-49a8-8c76-ce789eabeba5" />
